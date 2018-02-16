@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>タイ 不動産ならCentury21 Fuji Realty(Thailand)Co.,Ltdまで</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="copyright" content="Template Party">
+	<meta name="description" content="バンコク賃貸ならFuji Realty(Thailand)Co.,Ltdにお任せ下さい！タイ国内物件数No.1！">
+	<meta name="keywords" content="タイ,不動産,仲介,賃貸,売買,投資,管理,バンコク,パタヤ">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	<script type="text/javascript" src="js/openclose.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="inner">
+			<h1><a href="http://thai.fuji-realty.asia/"><img src="images/top_logo_1.jpg" alt="Logo" id="logo"></a></h1>
+			<span id="title">タイのバンコク・パタヤの不動産紹介ならセンチュリー21 富士リアルティ タイランドへ</span>
+			<div id="imgtitle">
+        <a href=""><img id="imgtitle1" src="images/title.png" alt="タイトル"></a>
+        <a href=""><img id="imgtitle2" src="../images/footer_logo.png" alt="会社のロゴ" /></a>
+      </div>
+			<div id="kennsuu">
+				<strong>現在の登録物件数</strong><br />
+				<a href="./?act=list&kind=1">賃貸物件</a>：<strong class="big1">{val total/1}件</strong><br />
+				<a href="./?act=list&kind=6">売買物件</a>：<strong class="big1">{val total/6}件</strong>
+			</div>
+			<address>
+        <div id="addr">
+          <img src="./images/phone_top.jpg" alt="電話番号" />
+        </div>
+        <div id="teikyuubi">
+          <img src="./images/teikyuu.jpg" alt="営業時間" />
+        </div>
+      </address>
+		</div>
+	</header>
+
+	<nav id="menubar">
+    <ul class="menu">
+      <li><a href="http://thai.fuji-realty.asia/">ホーム<span>HOME</span></a></li>
+      <li><a href="./?act=list&kind=1">賃貸物件を探す<span>FIND FOR RENT</span></a></li>
+      <li><a href="./?act=list&kind=6">購入物件を探す<span>FIND FOR SALE</span></a></li>
+      <li><a href="./?act=list&html=aboutthai.html">タイ不動産<span>THAI REAL ESTATE</span></a></li>
+      <li><a href="./?act=list&html=company.html">会社案内<span>OUR COMPANY</span></a></li>
+      <li><a href="./?act=list&html=contact.html">お問い合わせ<span>CONTACT US</span></a></li>
+    </ul>
+  </nav>
+
+	<div id="contents">
+
+		<div id="contents-in">
+
+			<div id="main01">
+
+				<section class="list01">
+					<h2 id="seachresult">{val title}（検索結果{val counter/total}件を表示しています。）</h2>
+					<div class="sortbox">{val counter/total}件中　{val counter/start}〜{val counter/end}｜
+						<!--{def ord1}-->
+						高い順にソート
+						<!--{/def}-->
+						<!--{ndef ord1}-->
+						<a href="javascript:do_search(1)">高い順にソート</a>
+						<!--{/ndef}-->
+						｜
+						<!--{def ord2}-->
+						安い順にソート
+						<!--{/def}-->
+						<!--{ndef ord2}-->
+						<a href="javascript:do_search(2)">安い順にソート</a>
+						<!--{/ndef}-->
+						｜
+						<!--{def ord}-->
+						新着順にソート
+						<!--{/def}-->
+						<!--{ndef ord}-->
+						<a href="javascript:do_search('')">新着順にソート</a>
+						<!--{/ndef}-->
+						｜
+					</div>
+
+					<!--{each list}-->
+					<article>
+						<div id="list_wrap">
+							<h4>
+							{val list/title}[No.{val list/info_id}]
+							<!--{def list/new_flag}--><img src="images/icon_new.gif" alt="NEW" width="30" height="11"><!--{/def}-->
+							<!--{def list/recommend3}--> キャンペーン物件 <!--{/def}-->
+							<!--{def list/pdf}-->PDF資料あり<!--{/def}-->
+						</h4>
+							<figure id="centerimg">
+								<!--{def list/image1_file}-->
+								<img src="user_data/{val list/image1_file}" alt="{val list/title}" width="200">
+								<!--{/def}-->
+								<!--{ndef list/image1_file}-->
+								<img src="images/noimg.gif" alt="{val list/title}" width="200">
+								<!--{/ndef}-->
+							</figure>
+							<div id="list_innner">
+								<table>
+									<tr>
+										<th>{val list/info1/title}</th>
+										<td>{val list/info1/value}</td>
+										<th>{val list/info2/title}</th>
+										<td>{val list/info2/value}</td>
+									</tr>
+									<tr>
+										<th>{val list/info3/title}</th>
+										<td>{val list/info3/value}</td>
+										<th>{val list/info6/title}</th>
+										<td>{val list/info6/value}</td>
+									</tr>
+								</table>
+								<table>
+									<tbody>
+										<tr>
+											<th>間取り</th>
+											<th>{val list/info8/title}</th>
+											<th>面積</th>
+											<th>所在階</th>
+										</tr>
+										<tr>
+											<td>{val list/info7/value}</td>
+											<td>{val list/info8/value}(THB)</td>
+											<td>{val list/info9/value}</td>
+											<td>{val list/info10/value}</td>
+										</tr>
+										<tr>
+											<td>{val list/info11/value}</td>
+											<td>{val list/info12/value}(THB)</td>
+											<td>{val list/info13/value}</td>
+											<td>{val list/info14/value}</td>
+										</tr>
+										<tr>
+											<td>{val list/info15/value}</td>
+											<td>{val list/info16/value}(THB)</td>
+											<td>{val list/info17/value}</td>
+											<td>{val list/info18/value}</td>
+										</tr>
+									</tbody>
+								</table>
+								<span class="date">【登録日:{val list/regdate/0}/{val list/regdate/1}/{val list/regdate/2} {val list/regtime/0}:{val list/regtime/1}】
+								【更新日:{val list/update/0}/{val list/update/1}/{val list/update/2} {val list/uptime/0}:{val list/uptime/1}】</span>
+								<!--{def list/recommend1}--><span id="osusume_list" class="osusume">おすすめ</span>
+								<!--{/def}-->
+								<!--{def list/recommend2}--><span class="sumi">ご契約済</span>
+								<!--{/def}-->
+								<!--{def list/recommend3}--><span class="sumi">申込中</span>
+								<!--{/def}-->
+								<!--{def list/recommend4}--><span class="sumi">特選賃貸</span>
+								<!--{/def}-->
+								<!--{def list/recommend5}--><span class="sumi01">格安物件</span>
+								<!--{/def}-->
+								<!--{def list/recommend6}--><span class="sumi">短期契約可能</span>
+								<!--{/def}-->
+								<!--{def list/recommend7}--><span class="sumi">キャンペーン物件</span>
+								<!--{/def}-->
+								<!--{def list/recommend8}--><span class="sumi">ペット可</span>
+								<!--{/def}-->
+							</div>
+						</div>
+						<div id="button_syousai">
+							<a href="?act=bukken&id={val list/info_id}"><img id="button2" type="submit" src="images/more-or300.png" alt="詳細はこちら"></a>
+						</div>
+					</article>
+					<!--{/each}-->
+					<!--{def pager}-->
+					<p class="c big1">
+						<!--{def pager/prev}-->
+						<a href="javascript:do_page({val pager/prev/no})">
+							<< 前へ</a> |
+								<!--{/def}-->
+								<!--{ndef pager/prev}-->
+								<< 前へ | <!--{/ndef}-->
+									<!--{each pager/list}-->
+									<!--{def pager/list/link}-->
+									<a href="javascript:do_page({val pager/list/no})">{val pager/list/name}</a> |
+									<!--{/def}-->
+									<!--{ndef pager/list/link}-->
+									{val pager/list/name} |
+									<!--{/ndef}-->
+									<!--{/each}-->
+									<!--{def pager/next}-->
+									<a href="javascript:do_page({val pager/next/no})">次へ >></a>
+									<!--{/def}-->
+									<!--{ndef pager/next}-->
+									次へ >>
+									<!--{/ndef}-->
+					</p>
+					<!--{/def}-->
+
+				</section>
+				<!--/list-->
+
+			</div>
+			<!--/main-->
+
+		</div>
+		<!--/contents in-->
+
+		<div id="side01">
+
+			<aside>
+				<form name="form1" method="get">
+
+					<input type="hidden" name="act" value="list">
+					<input type="hidden" name="ord" value="{val form/ord}">
+					<input type="hidden" name="kind" value="{val form/kind}">
+					<input type="hidden" name="limit" value="{val limit}">
+					<input type="hidden" name="html" value="{val html}">
+					<input type="hidden" name="top" value="{val top}">
+					<input type="hidden" name="page" value="">
+
+					<table class="ta1 mb15">
+						<caption>{val title}検索</caption>
+						<tr>
+							<td>
+								間取りで検索<br />
+								<input type="checkbox" name="info7C[]" value="スタジオタイプ" {val form/info7Cスタジオタイプ} />スタジオタイプ<br />
+								<input type="checkbox" name="info7C[]" value="1ベッド" {val form/info7C1ベッド} />1ベッドルーム<br />
+								<input type="checkbox" name="info7C[]" value="2ベッド" {val form/info7C2ベッド} />2ベッドルーム<br />
+								<input type="checkbox" name="info7C[]" value="3ベッド" {val form/info7C3ベッド} />3ベッドルーム<br />
+								<input type="checkbox" name="info7C[]" value="4ベッド" {val form/info7C4ベッド} />4ベッドルーム<br />
+								<input type="checkbox" name="info7C[]" value="Duplex" {val form/info7CDuplex} />Duplex<br />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								金額で検索<br />
+								<input type="checkbox" name="info8C[]" value="1" {val form/info8C1} />THB10,000<br />
+								<input type="checkbox" name="info8C[]" value="2" {val form/info8C2} />20,001~30,000<br />
+								<input type="checkbox" name="info8C[]" value="3" {val form/info8C3} />30,001~40,000<br />
+								<input type="checkbox" name="info8C[]" value="4" {val form/info8C4} />40,001~50,000<br />
+								<input type="checkbox" name="info8C[]" value="5" {val form/info8C5} />50,001~60,000<br />
+								<input type="checkbox" name="info8C[]" value="6" {val form/info8C6} />60,001~70,000<br />
+								<input type="checkbox" name="info8C[]" value="7" {val form/info8C7} />70,001~80,000<br />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								エリアで検索<br />
+								<input type="checkbox" name="info3C[]" value="パホンヨーティンエリア" {val form/info3Cパホンヨーティンエリア} />パホンヨーティンエリア<br />
+								<input type="checkbox" name="info3C[]" value="ニューペップリーエリア" {val form/info3Cニューペップリーエリア} />ニューペップリーエリア<br />
+								<input type="checkbox" name="info3C[]" value="サイアムエリア" {val form/info3Cサイアムエリア} />サイアムエリア<br />
+								<input type="checkbox" name="info3C[]" value="プルンチットエリア" {val form/info3Cプルンチットエリア} />プルンチットエリア<br />
+								<input type="checkbox" name="info3C[]" value="ナナ・アソークエリア" {val form/info3Cナナ・アソークエリア} />ナナ・アソークエリア<br />
+								<input type="checkbox" name="info3C[]" value="プロンポンエリア" {val form/info3Cプロンポンエリア} />プロンポンエリア<br />
+								<input type="checkbox" name="info3C[]" value="エカマイエリア" {val form/info3Cエカマイエリア} />トンロー・エカマイエリア<br />
+								<input type="checkbox" name="info3C[]" value="オンヌットエリア" {val form/info3Cオンヌットエリア} />オンヌットエリア<br />
+								<input type="checkbox" name="info3C[]" value="バンチャーク以東" {val form/info3Cバンチャーク以東} />バンチャーク以東<br />
+								<input type="checkbox" name="info3C[]" value="シーロム・サトーンエリア" {val form/info3Cシーロム・サトーンエリア} />シーロム・サトーンエリア<br />
+							</td>
+						</tr>
+						<!--{def form/special}-->
+						<tr>
+							<td>
+								こだわりで検索
+								<!--{each form/special}-->
+								<div class="specialbox">
+									<label for="special{val form/special/no}">
+										<input type="checkbox" name="special{val form/special/no}" id="special{val form/special/no}" value="{val form/special/no}" <!--{def form/special/value}-->checked<!--{/def}-->>
+										<!--{def form/special/icon}-->
+										<img src="icon/{val form/special/icon}" alt="{val form/special/title}" title="{val form/special/title}">
+										<!--{/def}-->
+										<!--{ndef form/special/icon}-->
+										{val form/special/title}&nbsp;&nbsp;
+										<!--{/def}-->
+										&nbsp;</label>
+								</div>
+								<!--input type="hidden" name="special{val form/special/value}" value="{val form/special/value}"-->
+								<!--{/each}-->
+							</td>
+						</tr>
+						<!--{/def}-->
+					</table>
+
+					<div class="c big1 mb1em"><input type="submit" value="この条件で検索する"></div>
+				</form>
+			</aside>
+
+			<section class="mb1em">
+				<a href="http://thai.fuji-realty.asia/contact4.html" target="_blank"><img src="images/side1.png" alt="アテンド"></a>
+			</section>
+
+			<section class="mb1em">
+				<a href="http://thai.fuji-realty.asia/yokuaru.html" target="_blank"><img src="images/side2.png" width="248" height="250" alt="カオサン通り"></a>
+			</section>
+
+			<section class="mb1em">
+				<a href="https://form.os7.biz/f/dd79b177/" target="_blank"><img src="images/side_3.jpg" width="248" height="250" alt="紙飛行機"></a>
+			</section>
+
+			<section class="mb1em">
+				<img src="./images/line.jpg" width="248" height="250" alt="line">
+			</section>
+
+			<section class="mb1em">
+				<a href="https://www.facebook.com/FujiRealty.Century21/" target="_blank"><img src="./images/totsu_fb.png" width="248" height="250" alt="facebook"></a>
+			</section>
+
+			<h2><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</h2>
+			<a class="twitter-timeline" data-width="100%" data-height="400" data-dnt="true" href="https://twitter.com/FujiRealty_Thai">Tweets by FujiRealty_Thai</a>
+			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a href="https://twitter.com/FujiRealty_Thai" class="twitter-follow-button" data-show-count="false">Follow @FujiRealty_Thai</a>
+			<script>
+				! function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0],
+						p = /^http:/.test(d.location) ? 'http' : 'https';
+					if (!d.getElementById(id)) {
+						js = d.createElement(s);
+						js.id = id;
+						js.src = p + '://platform.twitter.com/widgets.js';
+						fjs.parentNode.insertBefore(js, fjs);
+					}
+				}(document, 'script', 'twitter-wjs');
+			</script>
+
+		</div>
+		<!--/side-->
+
+		<p id="pagetop"><a href="#">TOPへ戻る</a></p>
+
+	</div>
+	<!--/contents-->
+
+	<footer>
+		<div id="f_company">
+			<div id="f_company_in">
+				<div id="f_logo">
+					<a href=""><img src="../images/footer_logo.png" alt="会社のロゴ" /></a>
+				</div>
+				<div id="f_text">
+					<div id="f_text_tx">
+						タイの不動産のご相談なら、<br />センチュリー21 富士リアルティ タイランドにおまかせください！
+					</div>
+				</div>
+				<div id="f_image">
+					<img src="../images/fuji12.jpg" alt="店舗写真" />
+					<p>センチュリー21 富士リアルティ タイランドは、不動産売買・賃貸仲介及び<br />管理業、海外不動産投資コンサルを取り扱っております。</p>
+				</div>
+			</div>
+		</div>
+		<div id="f_wrap">
+			<div id="f_innner">
+				<div class="f_search">
+					<ul>
+						<li><a href="http://thai.fuji-realty.asia/">TOPページ</a></li>
+						<li><a href="http://thai.fuji-realty.asia/?act=list&kind=0">賃貸物件を探す</a></li>
+						<li><a href="http://thai.fuji-realty.asia/?act=list&kind=6">売買物件を探す</a></li>
+					</ul>
+				</div>
+				<div class="f_search">
+					<div class="f_searchti">【賃貸物件を探す】</div>
+					<ul>
+            <li><a href="./?act=list&ord=&kind=1&limit=10&html=&top=0&page=&info7=&info2=%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%A2%E3%83%91%E3%83%BC%E3%83%88%E3%83%A1%E3%83%B3%E3%83%88&info8=&info3=&info5=&info3=">サービスアパートメント</a></li>
+            <li><a href="./?act=list&ord=&kind=2&limit=10&html=&top=0&page=&info2C%5B%5D=%E3%82%A2%E3%83%91%E3%83%BC%E3%83%88%E3%83%A1%E3%83%B3%E3%83%88&info8=&info3=&info5=&info3=">アパートメント</a></li>
+            <li><a href="./?act=list&ord=&kind=1&limit=10&html=&top=0&page=&info2C%5B%5D=%E3%82%B3%E3%83%B3%E3%83%89%E3%83%9F%E3%83%8B%E3%82%A2%E3%83%A0&info8=&info3=&info5=&info3=">コンドミニアム</a></li>
+            <li><a href="./?act=list&ord=&kind=1&limit=10&html=&top=0&page=&info2C%5B%5D=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9&info8=&info3=&info5=&info3=">オフィス</a></li>
+            <li><a href="./?act=list&ord=&kind=1&limit=10&html=&top=0&page=&info2C%5B%5D=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9&info8=&info3=&info5=&info3=">店舗</a></li>
+          </ul>
+				</div>
+				<div class="f_search">
+					<div class="f_searchti">【売買物件を探す】</div>
+					<ul>
+						<li><a href="./?act=list&ord=&kind=2&limit=10&html=&top=0&page=&info3=%E3%82%B3%E3%83%B3%E3%83%89%E3%83%9F%E3%83%8B%E3%82%A2%E3%83%A0&info8=&info20=&info17=&info1=">コンドミニアム</a></li>
+						<li><a href="">フラットハウス</a></li>
+						<li><a href="./?act=list&ord=&kind=2&limit=10&html=&top=0&page=&info3=%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%83%B4%E3%82%A3%E3%83%A9&info8=&info20=&info17=&info1=">グランドヴィラ</a></li>
+						<li><a href="">倉庫</a></li>
+						<li><a href="./?act=list&kind=3">ランド(土地)</a></li>
+					</ul>
+				</div>
+				<div class="f_search">
+					<ul>
+						<li><a href="http://thai.fuji-realty.asia/company.html">会社案内</a></li>
+						<li><a href="#">プライバシーポリシー</a></li>
+						<li><a href="http://thai.fuji-realty.asia/contact.html">お問い合わせ</a></li>
+					</ul>
+				</div>
+				<div class="f_search">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.698778183627!2d100.56033331430424!3d13.736677990357244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ee325079f83%3A0x479bb511c736cea9!2sCentury+21+Fuji+Realty+(Thailand)+Co.%2CLtd.!5e0!3m2!1sen!2skh!4v1515121516547"
+            width="430" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+			</div>
+		</div>
+		<div id="f_copyright">
+			<small>Copyright&copy; 2017 <a href="http://thai.fuji-realty.asia/">Fuji Realty(Thailand)Co.,Ltd </a> All Rights Reserved.</small>
+			<span class="pr"><a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a></span>
+		</div>
+	</footer>
+
+	<!--スマホ用メニューバー-->
+	<img src="images/icon_bar.png" width="20" height="16" alt="" id="menubar_hdr" class="close">
+	<script type="text/javascript">
+		<!--
+		function do_search(ord) {
+			document.form1.ord.value = ord;
+			document.form1.submit();
+		}
+
+		function do_reset() {
+			var tags = document.getElementsByTagName('input');
+			for (j = 0; j < tags.length; j++) {
+				if (tags[j].type == "checkbox") {
+					tags[j].checked = false;
+				} else if (tags[j].type == "text") {
+					tags[j].value = '';
+				}
+			}
+		}
+
+		function do_page(page) {
+			document.form1.page.value = page;
+			document.form1.submit();
+		}
+		//-->
+	</script>
+	<script type="text/javascript">
+		if (OCwindowWidth() < 480) {
+			open_close("menubar_hdr", "menubar");
+		}
+	</script>
+	<script src="https://use.fontawesome.com/b61be28924.js"></script>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8&appId=1814063402208986";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-90699600-1', 'auto');
+		ga('require', 'GTM-MP2J28H');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>

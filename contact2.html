@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>タイ 不動産ならCentury21 Fuji Realty(Thailand)Co.,Ltdまで</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="Template Party">
+  <meta name="description" content="タイ 不動産 賃貸 売買 仲介のことならFuji Realty(Thailand)Co.,Ltdにお任せ下さい！タイ国内物件数No.1！">
+  <meta name="keywords" content="タイ,不動産,仲介,賃貸,売買,投資,管理,バンコク,パタヤ">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <script type="text/javascript" src="js/openclose.js"></script>
+</head>
+
+<body class="s-n">
+
+  <header>
+    <div class="inner">
+      <h1><a href="http://thai.fuji-realty.asia/"><img src="images/top_logo_1.jpg" alt="Logo" id="logo"></a></h1>
+      <span id="title">タイのバンコク・パタヤの不動産紹介ならセンチュリー21 富士リアルティ タイランドへ</span>
+      <div id="imgtitle">
+        <a href=""><img id="imgtitle1" src="images/title.png" alt="タイトル"></a>
+        <a href=""><img id="imgtitle2" src="../images/footer_logo.png" alt="会社のロゴ" /></a>
+      </div>
+      <div id="kennsuu">
+        <strong>現在の登録物件数</strong><br />
+        <a href="./?act=list&kind=1">賃貸物件</a>：<strong class="big1">{val total/1}件</strong><br />
+        <a href="./?act=list&kind=6">売買物件</a>：<strong class="big1">{val total/6}件</strong>
+      </div>
+      <address>
+        <div id="addr">
+          <img src="./images/phone_top.jpg" alt="電話番号" />
+        </div>
+        <div id="teikyuubi">
+          <img src="./images/teikyuu.jpg" alt="営業時間" />
+        </div>
+      </address>
+    </div>
+  </header>
+
+  <nav id="menubar">
+    <ul class="menu">
+      <li><a href="http://thai.fuji-realty.asia/">ホーム<span>HOME</span></a></li>
+      <li><a href="./?act=list&kind=0">賃貸物件を探す<span>Find FOR RENT</span></a></li>
+      <li><a href="./?act=list&kind=6">購入物件を探す<span>FIND FOR SALE</span></a></li>
+      <li><a href="/aboutthai.html">タイ不動産<span>Thai real estate</span></a></li>
+      <li><a href="company.html">会社案内<span>OUR COMPANY</span></a></li>
+      <li><a href="contact.html">お問い合わせ<span>CONTACT US</span></a></li>
+    </ul>
+  </nav>
+
+  <div id="contents">
+
+    <div id="contents-in">
+
+      <div id="main">
+
+        <section>
+
+          <form method="post" action="mail.php">
+            <h2>売買お問い合わせ入力フォーム</h2>
+            <table class="ta1 mb1em">
+              <tr>
+                <th>物件用途</th>
+                <td>
+                  <input type="radio" name="物件用途" value="投資用物件">投資用物件
+                  <input type="radio" name="物件用途" value="居住用物件">居住用物件
+                </td>
+              </tr>
+              <tr>
+                <th>ご希望のエリア</th>
+                <td>
+                  <input type="radio" name="ご希望のエリア" value="バンコク">バンコク
+                  <input type="radio" name="ご希望のエリア" value="パタヤ">パタヤ
+                  <input type="text" name="ご希望のエリア" size="30" class="ws" placeholder="その他">
+                </td>
+                </td>
+              </tr>
+              <tr>
+                <th>ご予算</th>
+                <td>
+                  <input type="text" name="ご予算1" size="30" class="ws" placeholder="ご予算">〜<input type="text" name="ご予算2" size="30" class="ws" placeholder="ご予算">
+                </td>
+              </tr>
+              <tr>
+                <th>購入目的<br>(複数選択可能)</th>
+                <td>
+                  <label><input type="checkbox" name="購入目的[]" value="投資">投資</label>
+                  <label><input type="checkbox" name="購入目的[]" value="自分で住む為">自分で住む為</label>
+                </td>
+              </tr>
+              <tr>
+                <th>間取り</th>
+                <td>
+                  <label><input type="checkbox" name="間取り[]" value="Studio">Studio</label>
+                  <label><input type="checkbox" name="間取り[]" value="1Bed">1Bed</label>
+                  <label><input type="checkbox" name="間取り[]" value="2Bed">2Bed</label>
+                  <label><input type="checkbox" name="間取り[]" value="3Bed">3Bed</label>
+                </td>
+              </tr>
+              <tr>
+                <th>その他ご希望条件</th>
+                <td><textarea name="その他ご希望条件" cols="30" rows="10" class="wl" placeholder="ご自由にご入力下さい"></textarea><br>
+                  <a href="">※タイ不動産内見をご希望の方はコチラよりお申し込みください。</a>
+                </td>
+              </tr>
+              <tr>
+                <th>お名前※</th>
+                <td><input type="text" name="お名前(姓)" size="30" class="ws" placeholder="姓"><br>
+                  <input type="text" name="お名前(名)" size="30" class="ws" placeholder="名"></td>
+              </tr>
+              <tr>
+                <th>お名前(ローマ字)</th>
+                <td><input type="text" name="お名前(ローマ字)firstname" size="30" class="ws" placeholder="First Name"><br>
+                  <input type="text" name="お名前(ローマ字)lastname" size="30" class="ws" placeholder="Last Name"></td>
+              </tr>
+              <tr>
+                <th>性別</th>
+                <td><label><input type="checkbox" name="sex[]" value="男性">男性</label>
+                  <label><input type="checkbox" name="sex[]" value="女性">女性</label></td>
+              </tr>
+              <tr>
+                <th>メールアドレス</th>
+                <td><input type="text" name="Email" size="30" class="wl" placeholder="メールアドレス"></td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td><input type="text" name="thai" size="30" class="wl" placeholder="タイ国内"><br>
+                  <input type="text" name="japan" size="30" class="wl" placeholder="日本国内"></td>
+              </tr>
+              <tr>
+                <th>現在お住まいの国</th>
+                <td><label><input type="checkbox" name="住まいの国1" value="タイ国内">タイ国内</label><input type="text" name="会社名" size="30" class="wl" placeholder="滞在してどのくらいですか？"><br>
+                  <label><input type="checkbox" name="住まいの国2" value="日本国内">日本国内</label><br>
+                  <label><input type="checkbox" name="住まいの国1" value="その他">その他</label>
+                </td>
+              </tr>
+              <tr>
+                <th>メルマガ登録（新着物件情報をお届けします）</th>
+                <td><label><input type="checkbox" name="メルマガ購読1" value="希望する">希望する</label>
+                  <label><input type="checkbox" name="メルマガ購読2" value="希望しない">希望しない</label>
+                </td>
+              </tr>
+              <tr>
+                <th>その他ご質問</th>
+                <td><textarea name="その他ご質問" cols="30" rows="10" class="wl"></textarea></td>
+              </tr>
+              <tr>
+                <th>当社のホームページを何でお知りになりましたか？</th>
+                <td><input type="checkbox" name="選択1" value="インターネット検索">インターネット検索
+                  <input type="checkbox" name="当社のホームページを何でお知りになりました" value="セミナー">セミナー
+                  <input type="checkbox" name="選択2" value="その他">その他
+                </td>
+
+              </tr>
+            </table>
+            <p align="center">
+              <input type="submit" value="確認" />　<input type="reset" value="リセット" />
+            </p>
+        </section>
+        </form>
+      </div>
+      <!--/main-->
+
+      <div id="sub">
+
+        <nav id="box1">
+          <h2>お問い合わせ種類<br><small>Contact Us</small></h2>
+          <ul>
+            <li><a href="./?act=list&html=contact.html"><i class="fa fa-home" aria-hidden="true"></i> 賃貸問い合わせ<small></small></a></li>
+            <li><a href="./?act=list&html=contact2.html"><i class="fa fa-home" aria-hidden="true"></i> 売買問い合わせ<span></span></a></li>
+            <li><a href="./?act=list&html=contact4.html"><i class="fa fa-home" aria-hidden="true"></i> 購入物件アテンド依頼<span></span></a></li>
+            <li><a href="./?act=list&html=contact3.html"><i class="fa fa-home" aria-hidden="true"></i> 物件オーナーお問い合わせ<span></span></a></li>
+          </ul>
+        </nav>
+
+        <nav id="box1">
+          <h2>賃貸物件タイプで検索<br><small>Select by property type</small></h2>
+          <ul>
+            <li><a href="./?act=list&ord=&kind=1&limit=10&html=&top=0&page=&info7=&info2=%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%A2%E3%83%91%E3%83%BC%E3%83%88%E3%83%A1%E3%83%B3%E3%83%88&info8=&info3=&info5=&info3="><img src="../images/side_menu_1.jpg" alt="サービスアパートメント" /></a></li>
+            <li><a href="./?act=list&kind=2"><img src="../images/side_menu_2.jpg" alt="アパート" /></a></li>
+            <li><a href="./?act=list&ord=&kind=1&limit=10&html=&top=0&page=&info2C%5B%5D=%E3%82%B3%E3%83%B3%E3%83%89%E3%83%9F%E3%83%8B%E3%82%A2%E3%83%A0&info8=&info3=&info5=&info3="><img src="../images/side_menu_3.jpg" alt="コンドミニアム" /></a></li>
+            <li><a href="./?act=list&kind=4"><img src="../images/side_menu_4.jpg" alt="オフィス" /></a></li>
+            <li><a href="./?act=list&kind=5"><img src="../images/side_menu_5.jpg" alt="店舗" /></a></li>
+          </ul>
+        </nav>
+
+        <nav id="box1">
+          <h2>売買物件タイプで検索<br><small>Select by property type</small></h2>
+          <ul>
+            <li><a href="./?act=list&kind=6"><img src="../images/side_menu_6.jpg" alt="プリセール" /></a></li>
+            <li><a href="./?act=list&kind=6"><img src="../images/side_menu_7.jpg" alt="リセール" /></a></li>
+          </ul>
+        </nav>
+
+        <nav id="box1">
+          <h2>エリアから選ぶ<br><small>Select by area</small></h2>
+          <ul>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> パホンヨーティンエリア<br><small>Phahon Yothin</small></a></li>
+            <li><a href="http://thai.fuji-realty.asia/?act=list&ord=&kind=0&limit=10&html=&top=0&page=&info6=&info20=&info12=&info17=%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%9A%E3%83%83%E3%83%97%E3%83%AA%E3%83%BC%E3%82%A8%E3%83%AA%E3%82%A2&info4=&info3="><i class="fa fa-caret-right" aria-hidden="true"></i> ニューペップリーエリア<br><small>New Phetchaburi</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> サイアムエリア<br><small>Siam</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> プルンチットエリア<br><small>Phloen Chit</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> ナナ・アソークエリア<br><small>Nana Asok</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> プロンポンエリア<br><small>Phrom Phong</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> エカマイエリア<br><small>Thong Lor Ekkamai</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> オンヌットエリア<br><small>PhraKhanong On Nut</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> バンチャーク以東<br><small>East Bang Chak</small></a></li>
+            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> サトーンエリア<br><small>Silom Sathorn</small></a></li>
+          </ul>
+        </nav>
+
+        <section class="box1">
+          <h2>店舗情報<br><small>Store information</small></h2>
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.698778184409!2d100.56032794995431!3d13.736677990309934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ee325079f83%3A0x479bb511c736cea9!2sCentury+21+Fuji+Realty+(Thailand)+Co.%2CLtd.!5e0!3m2!1sen!2skh!4v1485249642137"
+              width="100%" height="188" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> アドレス<br> Interchange Building 399 Unit No.S6, Sukhumvit Roda, Klongtoey-nua, Wattana, Bangkok, 10110, Thailand</p>
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i> 営業時間<br> 9:00～18:00（月～金）
+            <br>土曜日はお問い合せ下さい。</p>
+          <p><a href="http://thai.fuji-realty.asia/contact.html"><input type="submit" value="お問い合わせ"></a></p>
+        </section>
+
+      </div>
+      <!--/sub-->
+
+    </div>
+    <!--/contents in-->
+
+    <div id="side">
+
+      <section class="mb1em">
+				<a href="http://thai.fuji-realty.asia/contact4.html" target="_blank"><img src="images/side1.png" alt="アテンド"></a>
+			</section>
+
+			<section class="mb1em">
+				<a href="http://thai.fuji-realty.asia/yokuaru.html" target="_blank"><img src="images/side2.png" width="248" height="250" alt="カオサン通り"></a>
+			</section>
+
+			<section class="mb1em">
+				<a href="https://form.os7.biz/f/dd79b177/" target="_blank"><img src="images/side_3.jpg" width="248" height="250" alt="紙飛行機"></a>
+			</section>
+
+			<section class="mb1em">
+				<img src="./images/line.jpg" width="248" height="250" alt="line">
+			</section>
+
+			<section class="mb1em">
+				<a href="https://www.facebook.com/FujiRealty.Century21/" target="_blank"><img src="./images/totsu_fb.png" width="248" height="250" alt="facebook"></a>
+			</section>
+
+      <aside>
+        <h2><i class="fa fa-twitter" aria-hidden="true"></i> 弊社のつぶやき</h2>
+        <a class="twitter-timeline" data-width="220" data-height="400" data-dnt="true" href="https://twitter.com/FujiRealty_Thai">Tweets by FujiRealty_Thai</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </aside>
+      <a href="https://twitter.com/FujiRealty_Thai" class="twitter-follow-button" data-show-count="false">Follow @FujiRealty_Thai</a>
+      <script>
+        ! function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');
+      </script>
+    </div>
+    <!--/side-->
+
+    <p id="pagetop"><a href="#">TOPへ戻る</a></p>
+
+  </div>
+  <!--/contents-->
+
+  <footer>
+    <div id="f_company">
+      <div id="f_company_in">
+        <div id="f_logo">
+          <a href=""><img src="../images/footer_logo.png" alt="会社のロゴ" /></a>
+        </div>
+        <div id="f_text">
+          <div id="f_text_tx">
+            タイの不動産のご相談なら、<br />センチュリー21 富士リアルティ タイランドにおまかせください！
+          </div>
+        </div>
+        <div id="f_image">
+          <img src="../images/fuji12.jpg" alt="店舗写真" />
+          <p>センチュリー21 富士リアルティ タイランドは、不動産売買・賃貸仲介及び<br />管理業、海外不動産投資コンサルを取り扱っております。</p>
+        </div>
+      </div>
+    </div>
+    <div id="f_wrap">
+      <div id="f_innner">
+        <div class="f_search">
+          <ul>
+            <li><a href="http://thai.fuji-realty.asia/">TOPページ</a></li>
+            <li><a href="http://thai.fuji-realty.asia/?act=list&kind=0">賃貸物件を探す</a></li>
+            <li><a href="http://thai.fuji-realty.asia/?act=list&kind=6">売買物件を探す</a></li>
+          </ul>
+        </div>
+        <div class="f_search">
+          <div class="f_searchti">【賃貸物件を探す】</div>
+          <ul>
+            <li><a href="#">サービスアパートメント</a></li>
+            <li><a href="#">アパートメント</a></li>
+            <li><a href="#">フラットハウス</a></li>
+            <li><a href="#">グランドヴィラ</a></li>
+            <li><a href="#">ランド(土地)</a></li>
+            <li><a href="#">オフィス</a></li>
+            <li><a href="#">ショップ</a></li>
+            <li><a href="#">コンドミニアム</a></li>
+            <li><a href="#">ビルディング</a></li>
+          </ul>
+        </div>
+        <div class="f_search">
+          <div class="f_searchti">【売買物件を探す】</div>
+          <ul>
+            <li><a href="./?act=list&ord=&kind=2&limit=10&html=&top=0&page=&info3=%E3%82%B3%E3%83%B3%E3%83%89%E3%83%9F%E3%83%8B%E3%82%A2%E3%83%A0&info8=&info20=&info17=&info1=">コンドミニアム</a></li>
+            <li><a href="">フラットハウス</a></li>
+            <li><a href="./?act=list&ord=&kind=2&limit=10&html=&top=0&page=&info3=%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%83%B4%E3%82%A3%E3%83%A9&info8=&info20=&info17=&info1=">グランドヴィラ</a></li>
+            <li><a href="">倉庫</a></li>
+            <li><a href="./?act=list&kind=3">ランド(土地)</a></li>
+          </ul>
+        </div>
+        <div class="f_search">
+          <ul>
+            <li><a href="http://thai.fuji-realty.asia/company.html">会社案内</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="http://thai.fuji-realty.asia/contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="f_search">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.698778183627!2d100.56033331430424!3d13.736677990357244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ee325079f83%3A0x479bb511c736cea9!2sCentury+21+Fuji+Realty+(Thailand)+Co.%2CLtd.!5e0!3m2!1sen!2skh!4v1515121516547"
+            width="430" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div id="f_copyright">
+      <small>Copyright&copy; 2017 <a href="http://thai.fuji-realty.asia/">Fuji Realty(Thailand)Co.,Ltd </a> All Rights Reserved.</small>
+      <span class="pr"><a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a></span>
+    </div>
+  </footer>
+
+  <!--スマホ用メニューバー-->
+  <img src="images/icon_bar.png" width="20" height="16" alt="" id="menubar_hdr" class="close">
+  <script type="text/javascript">
+    if (OCwindowWidth() < 480) {
+      open_close("menubar_hdr", "menubar");
+    }
+  </script>
+  <script src="https://use.fontawesome.com/b61be28924.js"></script>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8&appId=1814063402208986";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+
+</html>
