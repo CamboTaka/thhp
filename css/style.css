@@ -10,7 +10,7 @@ body {
   padding: 0px;
   font-family: arial, sans-serif;
   background-color: #FFF;
-  border-top: 5px solid #f1ad02;
+  /* border-top: 5px solid #f1ad02;*/
   /* background-image: url(http://cambodia.fuji-realty.asia/images/concrete_seamless.png);*/
   background-position: 50% 50%;
   background-attachment: fixed;
@@ -92,11 +92,11 @@ header .inner {
 
 /*h1ロゴの設定*/
 
-header .inner h1 {
+header .inner h2 {
   position: absolute;
-  left: 18px;
+  left: -10px;
   /*innerに対して左から20pxの場所に配置*/
-  top: 26px;
+  top: 36px;
   /*innerに対して上から20pxの場所に配置*/
 }
 
@@ -1579,7 +1579,7 @@ section#serch_in {
 }
 
 header {
-  height: 124px;
+  height: 150px;
   /* background-image: url(http://cambodia.fuji-realty.asia/images/concrete_seamless.png); */
   background-position: 50% 42%;
   background-attachment: fixed;
@@ -1919,7 +1919,7 @@ img#logo {
   border-radius: 0 0 5px 5px;
   border: 1px solid black;
   border-top: snow;
-  margin: -41px 0 0 0px;
+  margin: -36px 0 0 0px;
   width: 173px;
   border-radius: 0 0 5px 5px;
 }
@@ -2369,7 +2369,7 @@ img#button_en {
     margin: 1px 0 0 0;
 }
 #imgtitle #imgtitle1 {
-    margin: -2px 0px 0 177px;
+    margin: 10px 0px 0 177px;
     display: inline;
     vertical-align: top;
 }
@@ -2478,4 +2478,29 @@ div#element-209 {
 #new1 h2#newinfo_hdr {
     width: 610px;
     margin: 0;
+}
+header #title {
+    padding: 0;
+    background: #333;
+    border-bottom: 3px solid #f90;
+}
+header #title .wrap {
+    display: table;
+}
+header .wrap {
+    width: 1130px;
+    margin: 0 auto;
+}
+header #title h1 {
+    font-weight: normal;
+    font-size: 80%;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 0;
+}
+a.right {
+    float: right;
+    /* position: absolute; */
+    margin: 7px 4px 0 0;
+    font-size: 80%;
 }
