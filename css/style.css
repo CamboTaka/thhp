@@ -2198,7 +2198,8 @@ div#f_text_tx {
 div.main-search {
     width: 100%;
     height: 323px;
-    background-image: url(http://cambodia.fuji-realty.asia/images/squairy_light.png);
+    background-image: url(../images/bangkok_bk.jpg);
+    background-size: contain;
     border-top: 5px #856649 solid;
     border-bottom: 3px solid #DDDDDD;
     padding: 10px 0;
@@ -2503,4 +2504,17 @@ a.right {
     /* position: absolute; */
     margin: 7px 4px 0 0;
     font-size: 80%;
+}
+h3.box_title {
+  /* margin-top: 14px; */
+  /* margin-top: 14px; */
+  background: -webkit-linear-gradient(top, #fff 0%, #f1e58b 100%);
+  background: linear-gradient(to bottom, #fff 0%, #f1e58b 100%);
+  border: 1px solid #b6b6b6;
+  box-shadow: 0 0 0 2px #fff inset;
+  font-size: 120%;
+  font-weight: bold;
+  line-height: 1.47;
+  padding: 5px 20px 5px 35px;
+  position: relative;
 }
