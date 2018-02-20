@@ -991,7 +991,7 @@ h2 span.sumi01 {
 }
 
 .mb15, .mb1em {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .clear {
@@ -2288,7 +2288,7 @@ h2#seachresult {
 }
 
 section#clock {
-    padding: 10px 0 0 10px;
+    border: 1px solid #cfcfcf;
 }
 img#ashton_asoke {
     margin-bottom: 10px;
@@ -2419,7 +2419,7 @@ div#kennsuu {
     left: 8px;
     display: inline-block;
     vertical-align: top;
-    font-size: 12pt;
+    font-size: 15pt;
 }
 div#imgtitle {
     width: 100%;
@@ -2517,4 +2517,9 @@ h3.box_title {
   line-height: 1.47;
   padding: 5px 20px 5px 35px;
   position: relative;
+}
+img.khf {
+    margin: 0px 7px 0 0;
+    position: relative;
+    top: 2px;
 }
