@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <meta name="copyright" content="Template Party">
   <meta name="description" content="バンコク賃貸ならFuji Realty(Thailand)Co.,Ltdにお任せ下さい！タイ国内物件数No.1！">
-  <meta name="keywords" content="タイ,不動産,仲介,賃貸,売買,投資,管理,バンコク,パタヤ">
+  <meta name="keywords" content="タイ,不動産,仲介,賃貸,売買,投資,管理,バンコク,パタヤ,century21,センチュリー21">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <!--[if lt IE 9]>
@@ -91,17 +91,62 @@
         <div class="color-overlay"></div>
         <div class="border-holder">
           <div class="block-inner">
+            <div class="news_list_box shop_id_02">
               <dl id="newinfo">
-                <!--{each newinfo}-->
-                <dt style="border: 1px solid #ddd; background: #ddd; font-size: 18px;">{val newinfo/rss_date}</dt><br>
-                <!--{def newinfo/url}-->
-                <dd><a href="{val newinfo/url}">{val newinfo/title}{val newinfo/contents}</a></dd>
-                <!--{/def}-->
-                <!--{ndef newinfo/url}-->
-                <dd>{val newinfo/title}{val newinfo/contents}</dd>
-                <!--{/ndef}-->
-                <!--{/each}-->
+                  <!--{each newinfo}-->
+                  <div class="news_outline cf">
+                  <dt style="border: 1px solid #ddd; background: #f1ad02; font-size: 18px;">{val newinfo/rss_date}</dt><br>
+                  <!--{def newinfo/url}-->
+                  <dd><a href="{val newinfo/url}">{val newinfo/title}{val newinfo/contents}</a></dd>
+                  <!--{/def}-->
+                  <!--{ndef newinfo/url}-->
+                  <dd>{val newinfo/title}{val newinfo/contents}</dd>
+                  <!--{/ndef}-->
+                  <a class="btn_news_detail" href="{val newinfo/url}"><img class="over" src="images/look_btn.png" alt="もっと詳細を見る"></a>
+                  </div>
+                  <!--{/each}-->
               </dl>
+            </div>
+            <div id="side">
+
+              <section class="mb1em">
+                <a href="http://thai.fuji-realty.asia/contact4.html" target="_blank"><img src="images/side1.png" alt="アテンド"></a>
+              </section>
+
+              <section class="mb1em">
+                <a href="http://thai.fuji-realty.asia/yokuaru.html" target="_blank"><img src="images/side2.png" width="248" height="250" alt="カオサン通り"></a>
+              </section>
+
+              <section class="mb1em">
+                <a href="https://form.os7.biz/f/dd79b177/" target="_blank"><img src="images/side_3.jpg" width="248" height="250" alt="紙飛行機"></a>
+              </section>
+
+              <section class="mb1em">
+                <img src="./images/line.jpg" width="248" height="250" alt="line">
+              </section>
+
+              <section class="mb1em">
+                <a href="https://www.facebook.com/FujiRealty.Century21/" target="_blank"><img src="./images/totsu_fb.png" width="248" height="250" alt="facebook"></a>
+              </section>
+
+              <h2><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</h2>
+              <a class="twitter-timeline" data-width="247" data-height="400" data-dnt="true" href="https://twitter.com/FujiRealty_Thai">Tweets by FujiRealty_Thai</a>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a href="https://twitter.com/FujiRealty_Thai" class="twitter-follow-button" data-show-count="false">Follow @FujiRealty_Thai</a>
+              <script>
+                ! function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                  if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }
+                }(document, 'script', 'twitter-wjs');
+              </script>
+            </div>
+            <!--/side-->
             <p id="pagetop"><a href="#">TOPへ戻る</a></p>
           </div>
         </div>

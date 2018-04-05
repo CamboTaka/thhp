@@ -1173,7 +1173,7 @@ img {
   /*ヘッダーブロック*/
   header {
     background-image: none;
-    max-height: 90px;
+    max-height: 125px;
   }
   p#pagetop {
     right: 7px;
@@ -1201,6 +1201,15 @@ img {
     top: -40px;
     position: relative;
     right: 46px;
+  }
+  img#logo{
+    display: none;
+  }
+  section.list.main_list {
+    margin-top: 10px;
+  }
+  #contents #contents-in #new1 h2 {
+    width: 100%;
   }
   /*h1ロゴの設定*/
   header .inner h1 {
@@ -1452,7 +1461,7 @@ img {
   }
   .content_area {
     width: 100%;
-    height: 1940px;
+    min-height: 3460px;
     padding: 0px;
   }
   .menu li {
@@ -1480,7 +1489,7 @@ img {
   #imgtitle #imgtitle2{
     display: block;
     width: 100%;
-    margin: -14px 0 0 0;
+    margin: -5px 0 0 0;
   }
   #demo1 figure img {
     max-width: 100%;
@@ -1523,6 +1532,10 @@ img {
   }
   div#main02 article #table1_1{
     width: 100%;
+  }
+  #main02 h2.mb15 {
+    font-size: 10px;
+    width: 98%;
   }
 }
 
@@ -2522,4 +2535,25 @@ img.khf {
     margin: 0px 7px 0 0;
     position: relative;
     top: 2px;
+}
+.news_outline.cf {
+    position: relative;
+    background-color: #EFEAE0;
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 5px;
+    margin-bottom: 10px;
+    /* height: 90px; */
+    clear: both;
+}
+.news_list_box.shop_id_02 {
+    width: 900px;
+    float: left;
+}
+a.btn_news_detail {
+    float: right;
+    margin: -25px 0px 0 0;
+}
+#newinfo dd {
+    font-size: 14px;
 }
