@@ -1173,7 +1173,7 @@ img {
   /*ヘッダーブロック*/
   header {
     background-image: none;
-    max-height: 125px;
+    max-height: 150px;
   }
   p#pagetop {
     right: 7px;
@@ -1309,7 +1309,7 @@ img {
   /*コンテンツ（main,subを囲むブロック）
 ---------------------------------------------------------------------------*/
   #contents {
-    width: auto;
+    width: 100%;
     /* margin-right: 6px; */
     /* margin-left: 6px; */
     box-shadow: none;
