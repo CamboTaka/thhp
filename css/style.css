@@ -79,7 +79,7 @@ header {
 header .inner {
   width: 1110px;
   /*ブロック幅*/
-  height: 100%;
+  height: auto;
   /*ブロックの高さ*/
   margin-right: auto;
   margin-left: auto;
@@ -152,9 +152,10 @@ header .inner address .tel {
 nav#menubar {
   /*ブロックの高さ*/
   /* border-bottom: 3px solid #DDDDDD; */
-  background-color: #f1ad02;
-  height: 60px;
+  background: linear-gradient(#f9c03d, #f6ab00);
+  height: 49px;
   border-top: 3px solid #DDDDDD;
+  border-bottom: 3px solid #DDDDDD;
   padding: 1px;
   /*背景色（古いブラウザだとここの色のみが出ます）*/
   /* background-image: -webkit-gradient(linear, left top, left bottom, from(#8e94da), to(#0f1bb1)); */
@@ -192,9 +193,9 @@ nav#menubar ul li a {
   /*マウスオン時の移り変わるまでの時間設定。0.5秒。*/
   transition: 0.5s;
   /*同上*/
-  line-height: 30px;
-  padding-top: 5px;
-  color: #ffffff;
+  line-height: 20px;
+  padding-top: 7px;
+  color: #000000;
   /*文字色*/
 }
 
@@ -209,6 +210,7 @@ nav#menubar ul li:first-child {
 
 nav#menubar ul li a:hover {
   background-color: #87CEEB;
+  height: 43px;
   /*背景色*/
 }
 
@@ -2164,7 +2166,7 @@ div#f_copyright {
     text-align: center;
     color: #FFFFFF;
     line-height: 25px;
-    background: #F7AB00;
+    background: linear-gradient(#f9c03d, #f6ab00);
 }
 
 div#f_text_tx {
@@ -2556,4 +2558,201 @@ a.btn_news_detail {
 }
 #newinfo dd {
     font-size: 14px;
+}
+/* 現在の掲載数を表示する為のCSSカスタマイズ */
+.inner .PageHeader__EstateStatus {
+  border-spacing: 1px 0;
+  position: absolute;
+  top: 0;
+  left: calc( 50% - 500px );
+  display: table;
+}
+
+.inner .PageHeader__EstatesGroup {
+  display: table-cell;
+  width: 140px;
+}
+
+.inner .PageHeader__EstatesHeader {
+  padding: 12px 20px 15px;
+  background: #EBE7DB;
+  position: relative;
+  left: 545px;
+  height: 92px;
+}
+
+.inner .PageHeader__EstatesCount {
+  font-size: 0;
+  line-height: 1;
+  margin: 0 -20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.PageHeader__EstatesGroup .PageHeader__EstatesCountValue {
+  color: #DD310F;
+  font-size: 28px;
+  display: inline-block;
+}
+
+.PageHeader__EstatesGroup .PageHeader__EstatesCountUnit {
+  color: #7D7669;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.inner .PageHeader__EstatesLabel {
+  color: #FFF;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px 0 2px;
+  border-radius: 100px;
+  background: #B4AB8D;
+  margin-bottom: 5px;
+}
+
+#ct_wp #ct_info_wp {
+  width: 100%;
+  margin: 10px auto 0;
+}
+#ct_wp #ct_info {
+  width: 100%;
+}
+#ct_wp #ct_info .topics_th {
+  border-bottom: none;
+}
+
+#ct_wp #ct_info th {
+  color: #FFF;
+  width: 58px;
+  height: 23px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid rgb(50, 74, 207);
+}
+
+#ct_wp #ct_info td {
+  text-align: left;
+  padding: 0 10px;
+  border: 1px solid #CCC;
+  border-left: none;
+}
+
+#ct_wp #ct_info #ct_info_news .ttl {
+  color: #108BB8;
+  width: 660px;
+  margin: 0 0 0 7px;
+  overflow: hidden;
+}
+
+#ct_wp #ct_info #ct_info_news .date, #ct_wp #ct_info #ct_info_news .ttl {
+  float: left;
+}
+
+/* for Scroll Fix Header */
+
+header{
+  width:100%;
+}
+
+.fix-header {
+background-color:#f9c03d;
+line-height: 66px;
+top: -66px;/* 上に隠す鷹さ */
+left: 0;
+text-align: center;
+width: 100%;
+margin: 0 auto;
+color: #fff;
+padding-top:15px;
+position: fixed;
+opacity:0;/* 	最初読み込んだときは透過 */
+z-index: 1000;/*　他のアイテムに対して最上位のレイヤーになるように */
+/*	opacity: 0; */
+}
+
+.fix-header-contents{
+  width:800px;
+  margin: 0 auto;
+}
+
+.fix-header ul{
+list-style-type: none;
+}
+
+.fix-header li{
+float:left;
+margin-right:32px;
+}
+
+.fix-header li a,.fix-header li a:visited{
+color: #fff;
+text-decoration: none;
+}
+.fix-header li:last-child{
+margin-right:0;
+}
+#fix-header-logo{
+float:left;
+}
+
+#fix-header-logo img{
+width:54px;
+}
+
+#fix-header-menus{
+float:right;
+text-align: right;
+}
+#scroll-fix-menu img{
+padding-bottom: 5px;
+ border-bottom:2px solid #fff;
+}
+
+#scroll-fix-menu .current-menu-item img{
+ border-bottom:2px solid #0f142a;
+}
+
+#scroll-fix-menu a img:hover{
+ border-bottom:2px solid #0f142a;
+transition:border-color 0.6s ease-out;
+}
+
+/* micro clearfx */
+.cf:before, .cf:after {
+  content:"";
+  display:table
+}
+.cf:after { clear:both }
+.cf { zoom:1 } /* For IE 6/7 */
+
+nav{
+  width:100%;
+  background-color: #646464;
+}
+.nav-container{
+  width:800px;
+  margin: 0 auto;
+}
+
+nav ul{
+  padding:0;
+  list-style: none;
+}
+
+nav ul li{
+  float:left;
+}
+
+nav ul li a,nav ul li a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+
+article{
+  width:800px;
+  margin:20px auto ;
 }

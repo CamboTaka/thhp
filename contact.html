@@ -29,10 +29,33 @@
         <a href=""><img id="imgtitle1" src="images/title.png" alt="タイトル"></a>
         <a href=""><img id="imgtitle2" src="../images/footer_logo.png" alt="会社のロゴ" /></a>
       </div>
-      <div id="kennsuu">
-        <strong>現在の登録物件数</strong><br />
-        <a href="./?act=list&kind=1">賃貸物件</a>：<strong class="big1">{val total/1}件</strong><br />
-        <a href="./?act=list&kind=6">売買物件</a>：<strong class="big1">{val total/6}件</strong>
+      <div class="PageHeader__EstateStatus">
+        <div class="PageHeader__EstatesGroup">
+          <div class="PageHeader__EstatesHeader">
+            <div class="PageHeader__EstatesLabel">
+              賃貸物件
+            </div>
+            <div class="PageHeader__EstatesCount">
+              <span class="PageHeader__EstatesCountValue">
+                  <a href="./?act=list&kind=1">{val total/1}</a>
+              </span>
+              <span class="PageHeader__EstatesCountUnit">
+                  件
+              </span>
+            </div>
+            <div class="PageHeader__EstatesLabel">
+                売買物件
+              </div>
+              <div class="PageHeader__EstatesCount">
+                <span class="PageHeader__EstatesCountValue">
+                    <a href="./?act=list&kind=6">{val total/6}</a>
+                </span>
+                <span class="PageHeader__EstatesCountUnit">
+                    件
+                </span>
+              </div>
+          </div>
+        </div>
       </div>
       <address>
         <div id="addr">

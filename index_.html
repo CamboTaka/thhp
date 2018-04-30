@@ -20,30 +20,29 @@
   <link rel="stylesheet" href="css/imagehover.min.css">
   <!-- Demo styles -->
   <style>
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    </style>
 </head>
 
 <body id="top">
@@ -65,11 +64,42 @@
         <!-- レスポンシブデザイン TOP画像 -->
         <a href=""><img id="imgtitle2" src="../images/thai_sptop.png" alt="会社のロゴ" /></a>
       </div>
+      <!-- 現在の掲載数を表示する箇所 -->
+      <div class="PageHeader__EstateStatus">
+        <div class="PageHeader__EstatesGroup">
+          <div class="PageHeader__EstatesHeader">
+            <div class="PageHeader__EstatesLabel">
+              賃貸物件
+            </div>
+            <div class="PageHeader__EstatesCount">
+              <span class="PageHeader__EstatesCountValue">
+                  <a href="./?act=list&kind=1">{val total/1}</a>
+              </span>
+              <span class="PageHeader__EstatesCountUnit">
+                  件
+              </span>
+            </div>
+            <div class="PageHeader__EstatesLabel">
+                売買物件
+              </div>
+              <div class="PageHeader__EstatesCount">
+                <span class="PageHeader__EstatesCountValue">
+                    <a href="./?act=list&kind=6">{val total/6}</a>
+                </span>
+                <span class="PageHeader__EstatesCountUnit">
+                    件
+                </span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
       <div id="kennsuu">
         <strong>現在の掲載物件数</strong><br />
-        <a href="./?act=list&kind=1">賃貸物件</a>：<strong class="big1" style="color: red; text-decoration: underline;">{val total/1}件</strong><br />
-        <a href="./?act=list&kind=6">売買物件</a>：<strong class="big1" style="color: red; text-decoration: underline;">{val total/6}件</strong>
+        <a href="./?act=list&kind=1">賃貸物件</a>：<strong class="big1" style="color: red; text-decoration: underline;"><a href="./?act=list&kind=1">{val total/1}件</a></strong><br />
+        <a href="./?act=list&kind=6">売買物件</a>：<strong class="big1" style="color: red; text-decoration: underline;"><a href="./?act=list&kind=6">{val total/6}件</a></strong></strong>
       </div>
+      -->
       <address>
         <div id="addr">
           <img src="./images/phone_top.jpg" alt="電話番号" />
@@ -87,7 +117,25 @@
     <li class="tban" id="t_right"></li>
   </ul>
   縦バナー -->
-
+  <!-- 固定ヘッダ表示用のブロック -->
+  <div class="fix-header">
+    <div class="fix-header-contents">
+      <!-- ロゴはfloat左寄せで表示 -->
+      <div id="fix-header-logo">
+        <a href="./"><img src="./images/top_logo_1.jpg" alt="固定ヘッダー部分"></a>
+    </div>
+    <!-- メニューのブロックはfloatで右寄せ -->
+    <div id="fix-header-menus" class="cf">
+      <ul id="scroll-fix-menu" class="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="./?act=list&kind=1">賃貸物件を探す</a></li>
+        <li><a href="./?act=list&kind=6">購入物件を探す</a></li>
+        <li><a href="./?act=list&html=aboutthai.html">タイ不動産</a></li>
+        <li><a href="./?act=list&html=contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
   <nav id="menubar">
     <ul class="menu">
       <li><a href="http://thai.fuji-realty.asia/">ホーム<span>HOME</span></a></li>
@@ -101,17 +149,12 @@
 
   <!-- Swiper -->
   <div class="swiper-container">
-    <p>BUY<br>SELL<br>RENT<br>INVEST</p>
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><!-- スライドさせる画像を挿入する場所 --></div>
+        <div class="swiper-slide"><img src="./images/banner_thtop.jpg" alt="century21"></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
-
   <!-- div.main-search -->
   <div class="main-search">
     <div id="main-search_wrap" class="hover12 column">
@@ -137,11 +180,8 @@
     </div>
   </div>
   <!-- div.main-search -->
-
   <div id="contents">
-
     <div id="contents-in">
-
       <div id="main">
         <section id="new1">
           <h2 id="newinfo_hdr" class="close"><i aria-hidden="true"></i> インフォメーション<br><small>information</small></h2>
@@ -161,7 +201,6 @@
           <section class="list main_list">
             <div class="tab_area clearfix">
               <ul>
-                <li class="even"><a href="#contents1">新着物件一覧</a></li>
                 <li class="even"><a href="#contents1">賃貸物件新着</a></li>
                 <li class="odd"><a href="#contents2">売買物件新着</a></li>
               </ul>
@@ -399,7 +438,7 @@
           <ul>
             <li><a href="http://thai.fuji-realty.asia/company.html">会社案内</a></li>
             <li><a href="#">プライバシーポリシー</a></li>
-            <li><a href="http://thai.fuji-realty.asia/contact.html">お問い合わせ</a></li>
+            <li><a href="javascript:void(0);" onclick="openContact('http://thai.fuji-realty.asia/?act=list&html=contact.html')">お問い合わせ</a></li>
           </ul>
         </div>
         <div class="f_search">
@@ -419,6 +458,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
   <!-- ranklet -->
   <script src="//tracker.iws.vc/v1/ranklet/s3/widgets/10729/widget.js"></script>
+  <!-- Google Hosted LibrariesからjQuery取得 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- ▲ローカルに保存したjQuery本体へのリンクでももちろんOK -->
+ 
+<!--for Scroll fix header -->
+<script>
+//scroll fix header
+$(function () {
+	"use strict";
+	var flag = "view";
+ 
+  $(window).on("scroll", function () {
+    // scrollTop()が「200」より大きい場合
+   //画面トップから、ナビゲーションメニューまでの高さ（ピクセル）を指定すれば、メニュースクロールで
+   //消えていくタイミングでヘッダが表示されて固定される。  
+    
+    if ($(this).scrollTop() > 200) {
+      if (flag === "view") {
+        $(".fix-header").stop().css({opacity: '1.0'}).animate({
+   //”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+          top: 0
+        }, 500);
+ 
+        flag = "hide";
+      }
+    } else {
+      if (flag === "hide") {
+        $(".fix-header").stop().animate({top:"-66px",opacity: 0}, 500);
+		//上にあがり切ったら透過度を0%にして背景が生きるように
+        　　　　//”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+        flag = "view";
+      }
+    }
+  });
+});
+</script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
